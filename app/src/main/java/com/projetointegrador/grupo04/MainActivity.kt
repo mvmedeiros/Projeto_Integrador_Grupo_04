@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         visibilityNavElements(navController) //If you want to hide drawer or bottom navigation configure that in this function
 
-        setMainWindowFlags()
+        //setMainWindowFlags()
 
     }
 

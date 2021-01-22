@@ -35,7 +35,7 @@ class FavoriteFragment : Fragment() {
         _viewModel = ViewModelProvider(
             this,
             FavoriteViewModel
-                .TarefaViewModelFactory(FavoriteRepository(AppDatabase.getDatabase(_view.context).tarefaDao()))
+                .TarefaViewModelFactory(FavoriteRepository(AppDatabase.getDatabase(_view.context).favoriteDao()))
         ).get(FavoriteViewModel::class.java)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
